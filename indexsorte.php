@@ -137,4 +137,86 @@ $z=$x . $y;
 echo "<br>";
 echo $z;
 ?>
+<?php
+$x="Meu Teste";
+echo "<br>";
+echo substr($x, 6);
+?>
+<?php
+//\`   Single Quote
+//\"   Double Quote 
+//\$   PHP variables
+//\n   New Line
+//\r   Carriage Return
+//\t   Tab
+//\f   Form Feed
+//\ooo Octal value
+//\xhh Hex value 
+
+$x="Somos os chamados \"Vikings\" do norte";
+echo $x;
+?>
+<?php
+$a=5;
+$b=5.34;
+$c="25";
+$y=1.9e411;
+var_dump ($a);
+echo "<br>";
+var_dump ($b);
+echo "<br>";
+var_dump ($c);
+echo "<br>";
+var_dump ($y);
+echo "<br>";
+?>
+<?php
+//verifique se o tipo de uma
+//variavel e inteiro
+$x=5985;
+var_dump ($y);
+echo "<br>";
+//verificar novamente
+$x=3.14;
+var_dump (is_int ($x));
+echo "<br>";
+?>
+<?php
+//verifique se o tipo de uma
+//variavel e inteiro
+$x=5985;
+var_dump ($y);
+echo "<br>";
+//verificar novamente
+$x=3.14;
+var_dump (is_int ($x));
+echo "<br>";
+var_dump (is_int ($x));
+echo "<br>";
+$x=10.123;
+var_dump (is_int ($x));
+echo "<br>";
+$x=1.9e411;
+var_dump (is_infinite($x));
+?>
+<?php
+echo "<br>";
+$x=25.232;
+var_dump(is_string($x));
+echo "<br>";
+$x=5849;
+echo "<br>";
+$x=12.5e896;
+var_dump(is_string($x));
+echo "<br>";
+
+?>
+<?php
+$x=120.45075;
+$int_cast=(int)$x;
+echo $int_cast;
+
+?>
+
+
 
